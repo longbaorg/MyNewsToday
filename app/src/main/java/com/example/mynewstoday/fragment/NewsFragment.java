@@ -60,7 +60,7 @@ public class NewsFragment extends Fragment {
         return view;
     }
 
-    private void loadData() {
+    public void loadData() {
         NewsType nt = (NewsType)getArguments().getSerializable("type");
         //创建请求队列
         RequestQueue queue = Volley.newRequestQueue(getActivity());
@@ -105,78 +105,5 @@ public class NewsFragment extends Fragment {
         );
         queue.add(request);
     }
-
-//    private void initData() {
-//        mData.add(
-//                new NetNews(
-//                        "刚刚",
-//                        "民进党代表提华航改台航网友讽刺：中国卧底",
-//                        "北京晨报",
-//                        "",
-//                        R.mipmap.ic_launcher
-//                )
-//        );
-//
-//        mData.add(
-//                new NetNews(
-//                        "刚刚",
-//                        "热烈庆祝两会成功召开",
-//                        "北京晨报",
-//                        "",
-//                        R.mipmap.ic_launcher
-//                )
-//        );
-//
-//        mData.add(
-//                new NetNews(
-//                        "刚刚",
-//                        "留守儿童面临生活困难",
-//                        "北京晨报",
-//                        "",
-//                        R.mipmap.ic_launcher
-//                )
-//        );
-//
-//        mData.add(
-//                new NetNews(
-//                        "刚刚",
-//                        "国家鼓励大学生自主创业",
-//                        "北京晨报",
-//                        "",
-//                        R.mipmap.ic_launcher
-//                )
-//        );
-//
-//        mData.add(
-//                new NetNews(
-//                        "刚刚",
-//                        "北京出现罕见的雾霾天气",
-//                        "北京晨报",
-//                        "",
-//                        R.mipmap.ic_launcher
-//                )
-//        );
-//
-//        mData.add(
-//                new NetNews(
-//                        "刚刚",
-//                        "国家大力扶持中小型企业",
-//                        "北京晨报",
-//                        "",
-//                        R.mipmap.ic_launcher
-//                )
-//        );
-//
-//        mData.add(
-//                new NetNews(
-//                        "刚刚",
-//                        "某高中学生各科成绩均是满分",
-//                        "北京晨报",
-//                        "",
-//                        R.mipmap.ic_launcher
-//                )
-//        );
-//
-//    }
 
 }

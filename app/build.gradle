@@ -9,7 +9,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        
+
         //去除重复的包
         multiDexEnabled true
     }
@@ -29,7 +29,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    
     implementation files('libs/glide-3.7.0.jar')
     implementation files('libs/com.android.volley-2015.05.28.jar')
     implementation files('libs/glide-3.7.0.jar')
@@ -41,6 +40,7 @@ dependencies {
     implementation files('libs/okio-1.8.0.jar')
     implementation 'cn.jzvd:jiaozivideoplayer:6.2.7'
     implementation 'com.squareup.picasso:picasso:2.3.2'
-
-
+    implementation 'com.youth.banner:banner:1.4.10'
+    //用于管理图像及其使用内存的Android库。 https://frescolib.org/
+    implementation 'com.facebook.fresco:fresco:1.13.0'
 }

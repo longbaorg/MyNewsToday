@@ -357,14 +357,20 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_start) {
             // Handle the camera action
+            Toast.makeText(MainActivity.this,"敬请期待。。。。",Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_phone) {
 
+            Toast.makeText(MainActivity.this,"敬请期待。。。。",Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_help) {
 
+            Toast.makeText(MainActivity.this,"敬请期待。。。。",Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_message) {
 
+            Toast.makeText(MainActivity.this,"敬请期待。。。。",Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_set) {
 
+            Intent intent = new Intent(MainActivity.this , InfoSencode.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
