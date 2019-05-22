@@ -5,6 +5,7 @@
 okhttp
 jsoup
 volley
+tablayout与viewpage联动
 QQSDKzone、分享
 jzsp框架（饺子视频）
 侧滑等
