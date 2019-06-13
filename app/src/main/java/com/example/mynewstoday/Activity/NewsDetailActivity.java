@@ -1,13 +1,18 @@
 package com.example.mynewstoday.Activity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 import com.example.mynewstoday.R;
 import com.tencent.connect.share.QQShare;
 import com.tencent.tauth.Tencent;
@@ -35,6 +40,16 @@ public class NewsDetailActivity extends AppCompatActivity {
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 view.loadUrl(url);
                 return true;
+            }
+        });
+
+        FloatingActionButton fab =findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+                share();
             }
         });
     }
@@ -81,7 +96,8 @@ public class NewsDetailActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            share();
+//            share();
+            Toast.makeText(NewsDetailActivity.this,"暂未实现！",Toast.LENGTH_LONG).show();
         }
 
         return super.onOptionsItemSelected(item);

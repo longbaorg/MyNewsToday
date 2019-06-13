@@ -357,7 +357,7 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_start) {
             // Handle the camera action
-            Toast.makeText(MainActivity.this,"敬请期待。。。。",Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this,"收藏成功",Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_phone) {
 
             Toast.makeText(MainActivity.this,"敬请期待。。。。",Toast.LENGTH_LONG).show();

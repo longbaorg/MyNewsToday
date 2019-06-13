@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import com.example.mynewstoday.R;
 
 
@@ -17,6 +18,8 @@ public class SplashsActivity extends AppCompatActivity {
         if (getActionBar()!=null){
             getActionBar().hide();
         }
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         //启动线程闪屏页到主页
         new Handler().postDelayed(new Runnable() {

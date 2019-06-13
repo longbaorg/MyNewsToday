@@ -15,7 +15,7 @@ import com.example.mynewstoday.adapter.MyFragmentAdapter;
 import com.example.mynewstoday.entity.NetNews;
 import com.example.mynewstoday.entity.NewsType;
 import com.example.mynewstoday.utils.GlideImageLoader;
-import com.facebook.drawee.backends.pipeline.Fresco;
+//import com.facebook.drawee.backends.pipeline.Fresco;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
@@ -50,7 +50,7 @@ public class HomeFragment extends Fragment {
         tabs.setupWithViewPager(vp);
 
 
-        Fresco.initialize(getContext());
+//        Fresco.initialize(getContext());
 
 //        for (String li : listssurl){
 //            Log.d("TAG","--------listssurl------->"+li);
@@ -67,14 +67,14 @@ public class HomeFragment extends Fragment {
 //        List<String> listssTitle= new ArrayList<>();
         //        listssTitle.add(title);
         listssurl= new ArrayList<>();
-        listssurl.add("http://06imgmini.eastday.com/mobile/20190522/20190522202516_0666375f9d919ac8afcf03cd7e3bdc20_4_mwpm_03200403.jpg");
-        listssurl.add("http://05imgmini.eastday.com/mobile/20190522/2019052220_c9107e16815b490dab25e76f93e0c895_3940_mwpm_03200403.jpg");
-        listssurl.add("http://06imgmini.eastday.com/mobile/20190522/20190522202516_0666375f9d919ac8afcf03cd7e3bdc20_3_mwpm_03200403.jpg");
-        listssurl.add("http://05imgmini.eastday.com/mobile/20190522/20190522201825_0554e0d366edaea025588db5cd8fc116_2_mwpm_03200403.jpg");
-        listssurl.add("http://05imgmini.eastday.com/mobile/20190522/20190522201328_7da9464e6a012a766198491b7675608d_2_mwpm_03200403.jpg");
-        listssurl.add("http://01imgmini.eastday.com/mobile/20190522/20190522194850_63c5b5fd0c303e585da77e9bca77c551_6_mwpm_03200403.jpg");
-        listssurl.add("http://08imgmini.eastday.com/mobile/20190522/2019052219_7a8ef06ed4ae49fdb5a4f1bd44b08b62_0490_cover_mwpm_03200403.jpg");
-        listssurl.add("http://03imgmini.eastday.com/mobile/20190522/2019052218_97f21ca78231436fbe50c7545b1e7b57_9119_mwpm_03200403.jpg");
+        listssurl.add("https://06imgmini.eastday.com/mobile/20190522/20190522202516_0666375f9d919ac8afcf03cd7e3bdc20_4_mwpm_03200403.jpg");
+        listssurl.add("https://05imgmini.eastday.com/mobile/20190522/2019052220_c9107e16815b490dab25e76f93e0c895_3940_mwpm_03200403.jpg");
+        listssurl.add("https://06imgmini.eastday.com/mobile/20190522/20190522202516_0666375f9d919ac8afcf03cd7e3bdc20_3_mwpm_03200403.jpg");
+        listssurl.add("https://05imgmini.eastday.com/mobile/20190522/20190522201825_0554e0d366edaea025588db5cd8fc116_2_mwpm_03200403.jpg");
+        listssurl.add("https://05imgmini.eastday.com/mobile/20190522/20190522201328_7da9464e6a012a766198491b7675608d_2_mwpm_03200403.jpg");
+        listssurl.add("https://01imgmini.eastday.com/mobile/20190522/20190522194850_63c5b5fd0c303e585da77e9bca77c551_6_mwpm_03200403.jpg");
+        listssurl.add("https://08imgmini.eastday.com/mobile/20190522/2019052219_7a8ef06ed4ae49fdb5a4f1bd44b08b62_0490_cover_mwpm_03200403.jpg");
+        listssurl.add("https://03imgmini.eastday.com/mobile/20190522/2019052218_97f21ca78231436fbe50c7545b1e7b57_9119_mwpm_03200403.jpg");
         List<String> imageTitle = new ArrayList<>();
         imageTitle.add("一个军人给另一个人量衣服");
         imageTitle.add("一个非常时尚的女孩");
@@ -123,34 +123,34 @@ public class HomeFragment extends Fragment {
     private void initNewsType() {
         nt_list = new ArrayList<NewsType>();
         String APPKEY = "95bbd1bf1ced40d8e95c7e3288359714";
-        NewsType nt = new NewsType(1,"头条","http://v.juhe.cn/toutiao/index?type=top&key="+ APPKEY);
+        NewsType nt = new NewsType(1,"头条","https://v.juhe.cn/toutiao/index?type=top&key="+ APPKEY);
         nt_list.add(nt);
 
-        nt = new NewsType(2,"社会","http://v.juhe.cn/toutiao/index?type=shehui&key="+ APPKEY);
+        nt = new NewsType(2,"社会","https://v.juhe.cn/toutiao/index?type=shehui&key="+ APPKEY);
         nt_list.add(nt);
 
-        nt = new NewsType(3,"国内","http://v.juhe.cn/toutiao/index?type=guonei&key="+ APPKEY);
+        nt = new NewsType(3,"国内","https://v.juhe.cn/toutiao/index?type=guonei&key="+ APPKEY);
         nt_list.add(nt);
 
-        nt = new NewsType(4,"国际","http://v.juhe.cn/toutiao/index?type=guoji&key="+ APPKEY);
+        nt = new NewsType(4,"国际","https://v.juhe.cn/toutiao/index?type=guoji&key="+ APPKEY);
         nt_list.add(nt);
 
-        nt = new NewsType(5,"娱乐","http://v.juhe.cn/toutiao/index?type=yule&key="+ APPKEY);
+        nt = new NewsType(5,"娱乐","https://v.juhe.cn/toutiao/index?type=yule&key="+ APPKEY);
         nt_list.add(nt);
 
-        nt = new NewsType(6,"体育","http://v.juhe.cn/toutiao/index?type=tiyu&key="+ APPKEY);
+        nt = new NewsType(6,"体育","https://v.juhe.cn/toutiao/index?type=tiyu&key="+ APPKEY);
         nt_list.add(nt);
 
-        nt = new NewsType(7,"军事","http://v.juhe.cn/toutiao/index?type=junshi&key="+ APPKEY);
+        nt = new NewsType(7,"军事","https://v.juhe.cn/toutiao/index?type=junshi&key="+ APPKEY);
         nt_list.add(nt);
 
-        nt = new NewsType(8,"科技","http://v.juhe.cn/toutiao/index?type=keji&key="+ APPKEY);
+        nt = new NewsType(8,"科技","https://v.juhe.cn/toutiao/index?type=keji&key="+ APPKEY);
         nt_list.add(nt);
 
-        nt = new NewsType(9,"财经","http://v.juhe.cn/toutiao/index?type=caijing&key="+ APPKEY);
+        nt = new NewsType(9,"财经","https://v.juhe.cn/toutiao/index?type=caijing&key="+ APPKEY);
         nt_list.add(nt);
 
-        nt = new NewsType(10,"时尚","http://v.juhe.cn/toutiao/index?type=shishang&key="+ APPKEY);
+        nt = new NewsType(10,"时尚","https://v.juhe.cn/toutiao/index?type=shishang&key="+ APPKEY);
         nt_list.add(nt);
 
 
