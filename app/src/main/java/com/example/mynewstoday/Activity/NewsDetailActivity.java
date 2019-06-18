@@ -76,13 +76,13 @@ public class NewsDetailActivity extends AppCompatActivity {
 
     /*
           创建menu
-   */
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
+    }  */
 
     /*
            右上角的setting的点击事件
